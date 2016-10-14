@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <script src="../libs/jquery-3.1.1.min.js"></script>
+    <script src="../libs/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../libs/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+
+    <script src="../libs/angular-1.5.8/angular.min.js"></script>
+    <script src="../libs/angular-ui-router.js"></script>
+
+
+    <script src="../javascripts/appTpTiLzw.js"></script>
+</head>
+<body ng-app="appLZW">
+<div ng-controller="LzwCtrl">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>LZW Coder</h2>
+                <input type="text" ng-model="textInputed" width="500px"/>
+                <div>Result Decompress:{{decomp}}</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <textarea ng-model="arrayInput"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <button class="btn btn-danger" ng-click="calCode()">Calculate</button>
+        </div>
+        <div class="row">
+            <button class="btn btn-danger" ng-click="cleanWork()">CLEAN WORK SPACE</button>
+        </div>
+        <div class="row">
+            <button class="btn btn-danger" ng-click="decompress()">Decompress</button>
+        </div>
+
+
+
+    </div>
+</div>
+
+
+</body>
+</html>

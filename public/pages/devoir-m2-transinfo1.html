@@ -4,21 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
-    <script src="../libs/angular-1.5.8/angular.min.js"></script>
+    <script src="../libs/jquery-3.1.1.min.js"></script>
     <script src="../libs/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../libs/bootstrap-3.3.7-dist/css/bootstrap.min.css">
-    <script src="../libs/jquery-3.1.1.min.js"></script>
 
+    <script src="../libs/angular-1.5.8/angular.min.js"></script>
     <script src="../libs/angular-ui-router.js"></script>
+
+
     <script src="../javascripts/appDevoirM2TransInfo.js"></script>
 </head>
-<body ng-app="appDevoirM2TransInfo">
+<body ng-app="devoirM2TransInfoApp">
 <div ng-controller="HuffmanController">
     <div class="container">
+        <h2>devoir trans info</h2>
+        <input type="text" ng-model="textInput"/>
 
+        <textarea ng-model="arrayInput"></textarea>
+        <a href="#" ng-click="tester()">Tester</a>
     </div>
 </div>
 
-<h2>devoir trans info</h2>
+
 </body>
 </html>
