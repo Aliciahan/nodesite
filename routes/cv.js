@@ -8,5 +8,8 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.sendfile('public/pages/cv-main.html');
 });
+router.get('/force', function(req,res,next){
+  res.sendfile('public/pages/force.html');
+});
 
 module.exports = router;
