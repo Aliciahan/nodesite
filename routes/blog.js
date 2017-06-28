@@ -1,9 +1,14 @@
+/**
+ * Created by xicunhan on 28/06/2017.
+ */
+
+
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
+
 router.get('/', function(req, res, next) {
-  res.sendfile('public/pages/main-page.html');
+  res.redirect('http://a-real.me:4000');
 });
 
 
