@@ -6,5 +6,9 @@ router.get('/', function(req, res, next) {
   res.sendfile('public/pages/main-page.html');
 });
 
+router.get('/lisa', function(req, res, next) {
+  res.sendfile('public/lisa/index.html');
+});
+
 
 module.exports = router;
