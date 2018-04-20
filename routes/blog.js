@@ -8,7 +8,7 @@ var router = express.Router();
 
 
 router.get('/', function(req, res, next) {
-  res.redirect('http://a-real.me:4000');
+  res.redirect('http://a-real.me:8443');
 });
 
 
